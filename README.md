@@ -3,7 +3,7 @@
 ## About
 More in depth details about the project.
 
- ### Process & Documentation
+### Process & Documentation
 Share your design and technical process.
 
 ### Challenges & Struggles
