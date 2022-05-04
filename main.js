@@ -1,16 +1,16 @@
-let img; //remember we need to create a variable for our image
-//then we need to load the image in preload before setup
-function preload() {
-    img = loadImage("flowers.jpg");
-}
+﻿document.addEventListener("DOMContentLoaded", function () {
 
-function setup() {
-    let c = createCanvas(400, 400);
-    c.parent('canvas-wrapper');
-}
+    document.querySelector("#name").addEventListener("keyup", function () {
+        let val = this.value;
+        localStorage.setItem("name", val)
+    })
 
-function draw() {
-    ellipse(200, 200, 50, 50);
-    //then we will draw the image where the mouse is
-    image(img, mouseX, mouseY, 100, 100);
-}
+    let radios = document.querySelectorAll('.radio');
+    for (var i = radios.length - 1; i >= 0; i--) {
+        radios[i].addEventListener('change', function () {
+            localStorage.setItem("color", this.value)
+        })
+    }
+
+
+})

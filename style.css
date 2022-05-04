@@ -1,7 +1,158 @@
-canvas {
-    /*because our canvas is 400px wide we can subtract 200 from half the
-   width/height of the screen to get it to be in the middle*/
-    left: calc(50% - 200px);
-    top: calc(50vh - 200px);
-    position: relative;
+﻿body {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+/*    display: flex;*/
+/*    min-height: 100%;*/
+    min-width: 100%;
+    height:auto;
+    display:block;
+    background-size: cover;
+/*    flex-direction: column;*/
+/*    background-size: 100% auto;*/
+    /*        width: 1500px;*/
+    /* margin: auto;
+    display: inline-block; */
+    color: black;
+    font-size: 20px;
+    /* font-family: sans-serif; */
+    text-align: center;
+    /*    position: center;*/
 }
+
+.name {
+    color: black;
+    position: absolute;
+    top: 133px;
+    left: 42%;
+    font-size: 20px;
+}
+
+.nameanswer {
+    color: black;
+    position: absolute;
+    padding: 15px;
+    font-size: 20px;
+    top: 103px;
+    left: 2%;
+}
+
+.aboutbutton {
+    float: left;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    padding: 20px;
+    top: 23px;
+    left: 200px;
+    font-size: 18px;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 36px;
+}
+
+.jobtypes {
+    float: left;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    padding: 20px;
+    top: 23px;
+    left: 1100px;
+    font-size: 18px;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 36px;
+}
+
+
+.questionposition {
+    position: absolute;
+    top: 40%;
+    left: 36%;
+}
+
+.link {
+    position: absolute;
+    top: 90%;
+    left: 47%;
+}
+
+.paragraph {
+    background-color: rgb(128, 183, 255);
+    padding: 50px;
+    border:dotted;
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    width: 600px;
+    display: inline-block;
+}
+
+.topleft {
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    font-size: 18px;
+    font-family: Tarot;
+    color: white;
+}
+
+
+@font-face {font-family: Tarot; src: url('Tarot.otf')}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: Tarot;
+}
+
+.dashboard {
+    float: left;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    padding: 20px;
+    top: 23px;
+    left: 660px;
+    font-size: 18px;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 36px;
+    /* font-family: Tarot; */
+}
+
+.zoom {
+    /* padding: 30px; */
+    border: none;
+    background-color: lightgreen;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    color: black;
+    font-size: 20px;
+    background-color: #ddd;
+  transition: 0.3s;
+  }
+  
+  .zoom:hover {
+    background-color: #3e8e41;
+    color: white;
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
