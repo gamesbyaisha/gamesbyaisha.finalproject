@@ -1,13 +1,13 @@
 ﻿body {
-    background-image: url();
+    background-image: url(office.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
 /*    display: flex;*/
-/*    min-height: 100%;*/
-    min-width: 100%;
+   min-height: 100%;
+    /* /* min-width: 100%; */
     height:auto;
-    display:block;
-    background-size: cover;
+    display:block; 
+    /* background-size: cover; */
 /*    flex-direction: column;*/
 /*    background-size: 100% auto;*/
     /*        width: 1500px;*/
@@ -21,7 +21,7 @@
 }
 
 .name {
-    color: black;
+    color: white;
     position: absolute;
     top: 133px;
     left: 42%;
@@ -33,13 +33,14 @@
     position: absolute;
     padding: 15px;
     font-size: 20px;
-    top: 103px;
-    left: 2%;
+    top: 33px;
+    left: 1%;
+    text-align: center;
 }
 
 .aboutbutton {
     float: left;
-    background-color: black;
+    background-color: #084938;
     color: white;
     border: none;
     position: absolute;
@@ -51,11 +52,12 @@
     width: 90px;
     cursor: pointer;
     border-radius: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .jobtypes {
     float: left;
-    background-color: black;
+    background-color: #084938;
     color: white;
     border: none;
     position: absolute;
@@ -67,10 +69,13 @@
     width: 90px;
     cursor: pointer;
     border-radius: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 .questionposition {
+    color: white;
+    text-shadow: 0 0 3px #084938, 0 0 5px black;
     position: absolute;
     top: 40%;
     left: 36%;
@@ -80,10 +85,11 @@
     position: absolute;
     top: 90%;
     left: 47%;
+    color: white;
 }
 
 .paragraph {
-    background-color: rgb(128, 183, 255);
+    background-color: #084938;
     padding: 50px;
     border:dotted;
     font-size: 20px;
@@ -102,10 +108,11 @@
     font-size: 18px;
     font-family: Tarot;
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-@font-face {font-family: Tarot; src: url('Tarot.otf')}
+/* 
+@font-face {font-family: Georgia, 'Times New Roman', Times, serif; src: url('Tarot.otf')} */
 
 
 .footer {
@@ -114,12 +121,11 @@
     left: 20px;
     color: white;
     font-size: 15px;
-    font-family: Tarot;
 }
 
 .dashboard {
     float: left;
-    background-color: black;
+    background-color: #084938;
     color: white;
     border: none;
     position: absolute;
@@ -131,7 +137,7 @@
     width: 90px;
     cursor: pointer;
     border-radius: 36px;
-    /* font-family: Tarot; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .zoom {
@@ -147,12 +153,13 @@
     left: 47%;
     color: black;
     font-size: 20px;
+    cursor: pointer;
     background-color: #ddd;
   transition: 0.3s;
   }
   
   .zoom:hover {
-    background-color: #3e8e41;
+    background-color: #084938;
     color: white;
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
