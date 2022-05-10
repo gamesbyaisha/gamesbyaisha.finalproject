@@ -5,12 +5,37 @@
     <title></title>
 </head>
 <body>
-    <p style="color: white;" id="text">
+    <div style="width: 100%; margin: 2px 1em 0 auto;; height:120px;border:none; background-color: #052d23;"></div>
+
+    <p style="color: white; position: absolute; top: -20px; text-align: center; left: 45%; font-size: 50px; font-weight: 400;  text-shadow: 0 0 3px #084938, 0 0 5px black;"></pstyle>Results</p>
+
+    <p style="color: white; text-shadow: 0 0 3px #084938, 0 0 5px black;" id="text">
         <span id="name"></span>,<br>
         According to your answers, your highest level of education so far is 
+        <span id="education"></span>.<br>
+        Your motivations are
+        <!-- motivations --><br>
+        Your friends would describe you as 
+        <span id="adjective"></span>.<br>
+        You are an
+        <!-- extro or introvert --><br>
+        The jobs you dislike are
+        <span id="dislike"></span>.<br>
+        Your interests are
+        <span id="interests"></span>.<br>
+        You told us you want to be
+        <span id="wanttobe"></span>.<br>
+        Your expected salary is
+        <!-- salary --><br>
+        Your skills are
+        <span id="skills"></span>.<br>
     </p>
 
-        <p style="color: white;">Rate us!</p>
+
+    <button class="random">Press to see what we recommend</button>
+    <p id="generated" class="textoutput"></p>
+
+        <p style="color: white;text-shadow: 0 0 3px #084938, 0 0 5px black;">Rate us!</p>
         
         <div class="rating rating2"><!--
             --><a href="#5" title="Give 5 stars">★</a><!--
@@ -19,8 +44,10 @@
             --><a href="#2" title="Give 2 stars">★</a><!--
             --><a href="#1" title="Give 1 star">★</a>
         </div>
-    
-    <a href="home.html" class="link">Home Page</a>
+        <a href="home.html" class="link">Home Page</a>
+
+    <!-- <script src="artistConk.js"></script>
+    <script src="https://unpkg.com/rita@2.8.1/dist/rita.js"></script> -->
     <link rel="stylesheet" href="style.css">
     <script src="two.js"></script>
 </body>

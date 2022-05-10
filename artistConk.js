@@ -1,0 +1,1 @@
+let artistConk = "Engineer. Artist. Interior Designer. Doctor. Surgeon. Teacher. Cook. Cleaner. Manager. SMM Manager. Astronaut. IT Technician."
