@@ -9,15 +9,16 @@
 
     <!-- <p class="name">Name: <input id="name" type="text" </p> -->
     <p class="questionposition"> What is your expected salary? (a year)
-        <fieldset id="salary" class="paragraph">
-            $20k:<input type="radio" name="myRadios"id="salary" class="radio" value="middle School" /><br>
-            $50k:<input type="radio" name="myRadios" id="salary" class="radio" value="high School" /><br>
-            $75k:<input type="radio" name="myRadios" id="salary"class="radio" value="college" /><br>
-            $100k:<input type="radio" name="myRadios" id="salary"class="radio" value="masters" /><br>
-            $150k:<input type="radio" name="myRadios" id="salary"class="radio" value="phD" />
-        </fieldset> </p>
 
-
+        <form name="salary" class="paragraph" action=""> 
+            <input type="radio" name="expectations" value="$20k"> $20k<br>
+            <input type="radio" name="expectations" value="$50k"> $50k<br>
+            <input type="radio" name="expectations" value="$75k"> $75k<br>
+            <input type="radio" name="expectations" value="$100k">$100k<br>
+            <input type="radio" name="expectations" value="$150k">$150k
+            </form>
+            <p><span class="selectedEducation" style="color: transparent; top: 40%; position: absolute;"></span></p>
+        
     <h2 class="footer">
         Aisha Bikebayeva
     </h2>
