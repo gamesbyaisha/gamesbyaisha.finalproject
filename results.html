@@ -1,17 +1,20 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div style="width: 100%; margin: 2px 1em 0 auto;; height:120px;border:none; background-color: #052d23;"></div>
 
     <p style="color: white; position: absolute; top: -20px; text-align: center; left: 45%; font-size: 50px; font-weight: 400;  text-shadow: 0 0 3px #084938, 0 0 5px black;"></pstyle>Results</p>
 
-    <p style="color: white; text-shadow: 0 0 3px #084938, 0 0 5px black;" id="text">
+    <p style="color: white; text-shadow: 0 0 3px #084938, 0 0 5px black; text-align: left; margin-left: 40px;" id="text">
         <span id="name"></span>,<br>
-        According to your answers, your highest level of education so far is 
+        according to your answers, <br> your highest level of education so far is 
         <span id="education"></span>.<br>
         Your motivations are
         <!-- motivations --><br>
@@ -30,25 +33,17 @@
         Your skills are
         <span id="skills"></span>.<br>
     </p>
+    
+    <button class="recommendbutton">What we recommend</button>
+    <p id="generated" style="color:white; top: 40%; background-color: #084938; display: inline-block;
+    padding: 20px; position: fixed;
+    border:double; text-align: center; text-shadow: 0 0 3px #084938, 0 0 5px black;"></p>
+
+    <a href="rate.html" class="link">Rate Us</a>
 
 
-    <button class="random">Press to see what we recommend</button>
-    <p id="generated" class="textoutput"></p>
-
-        <p style="color: white;text-shadow: 0 0 3px #084938, 0 0 5px black;">Rate us!</p>
-        
-        <div class="rating rating2"><!--
-            --><a href="#5" title="Give 5 stars">★</a><!--
-            --><a href="#4" title="Give 4 stars">★</a><!--
-            --><a href="#3" title="Give 3 stars">★</a><!--
-            --><a href="#2" title="Give 2 stars">★</a><!--
-            --><a href="#1" title="Give 1 star">★</a>
-        </div>
-        <a href="home.html" class="link">Home Page</a>
-
-    <!-- <script src="artistConk.js"></script>
-    <script src="https://unpkg.com/rita@2.8.1/dist/rita.js"></script> -->
-    <link rel="stylesheet" href="style.css">
+    <script src="artistConk.js"></script>
+    <script src="https://unpkg.com/rita@2.8.1/dist/rita.js"></script>
     <script src="two.js"></script>
 </body>
 </html>
